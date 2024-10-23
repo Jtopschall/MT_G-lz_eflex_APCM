@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "instanceId": "123e4567-e89b-12d3-a456-426614174000",
+    "efdmVersion": {
+      "versionNumber": "1.0.0",
+      "schemaLink": "https://git.ptw.maschinenbau.tu-darmstadt.de/eta-fabrik/public/energy_flexibility_data_model/-/blob/main/efdm_v1.0/JSON_schema/schema_flexible_load_measure_package.json"
+    },
+    "origin": {
+      "originId": "123e4567-e89b-12d3-a456-426614174001",
+      "timestamp": "2023-11-14T12:00:00Z"
+    },
+    "modification": {
+      "modifierId": "123e4567-e89b-12d3-a456-426614174002",
+      "timestamp": "2023-11-14T13:00:00Z"
+    },
+    "comment": "Sample instance for flexible-load-measures-package"
+  },
+  "flexibleLoadMeasures": [
+    {
+      "flexibleLoadMeasureId": {
+        "uuid": "123e4567-e89b-12d3-a456-426614174003",
+        "comment": "First flexible load measure"
+      },
+      "flexibleLoadId": {
+        "uuid": "123e4567-e89b-12d3-a456-426614174004",
+        "comment": "Associated flexible load"
+      },
+      "loadChangeProfile": [
+        {
+          "power": {
+            "unit": "W",
+            "value": 100.0
+          },
+          "timestamp": "2023-11-14T14:00:00Z"
+        },
+        {
+          "power": {
+            "unit": "W",
+            "value": 50.0
+          },
+          "timestamp": "2023-11-14T15:00:00Z"
+        }
+      ],
+      "reward": {
+        "unit": "EUR",
+        "value": 500.0
+      }
+    }
+  ]
+}
